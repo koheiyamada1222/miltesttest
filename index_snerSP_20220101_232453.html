@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<!-- ここに Google Analytics タグ を入れてください -->
+
+	<!-- ここに Yahoo サイトジェネラルタグ を入れてください -->
+	
+	<!-- ここに Google Tag Manager タグ を入れてください -->
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+	<style type="text/css">
+		html, body {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #222;
+			-ms-content-zooming: none;
+			overflow-y: hidden;
+		}
+		.center {
+			width: 100%;
+			height: 100%;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-align-items: center;
+			align-items: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+		}
+		#header {
+			z-index: 2;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			/* 確認用に背景色を仮設定 */
+			background-color: red;
+		}
+		#content {
+			z-index: 1;
+			width: 100%;
+			min-width: 100px;
+		}
+		#footer {
+			z-index: 3;
+			position: fixed;
+			bottom: 0px;
+			left: 0px;
+			width: 100%;
+			/* 確認用に背景色を仮設定 */
+			background-color: blue;
+		}
+		#mil-embed-wrapper {
+			width: 100%;
+		}
+		.content-upside, .content-downside {
+			width: 100%;
+			/*--------------------------------------------------------------------
+				高さは固定にしてください
+
+				固定にしない場合、一般的に横幅が小さくなると高さが大きくなります。
+				そうするとリサイズ処理でコンテンツの高さを小さくしようとして、
+				さらに横幅を小さくしてしまい、無限に繰り返してしまいます。
+			--------------------------------------------------------------------*/
+			height: 1.5em;
+			overflow: hidden;
+			/* 確認用に背景色を仮設定 */
+			background-color: green;
+		}
+	</style>
+
+	<!-- ここに LINE タグ を入れてください -->
+
+	<!-- ここに AD EBiS タグ を入れてください -->
+
+	<!-- ここに Facebook Pixel Code を入れてください -->
+</head>
+<body class="center">
+	<!-- ここに Google Tag Manager (noscript) タグ を入れてください -->
+
+	<div id="header">
+		固定ヘッダー（用途に合わせて削除、変更してください）
+	</div>
+
+	<div id="content">
+
+		<div class="content-upside">
+			上部コンテンツ（用途に合わせて削除、変更してください）
+		</div>
+
+		<div id="mil-embed-wrapper">
+			<div class="mil-embed-snerSP" style="position:relative;width:100%;height:0;padding-bottom:148.15%;margin:0 auto;"><iframe class="mil-iframe-snerSP" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" width="100%" height="100%" src="https://millab.mil.movie/snerSP/?embed=1" allowfullscreen allow="autoplay; fullscreen"></iframe><script charset="UTF-8" data-mil-loader="https://millab.mil.movie/snerSP/js/mil_loader.js"></script><script>(function(){var mv=window;mv=mv.mil=mv.mil||{};mv=mv.versions=mv.versions||{};var ss=document.getElementsByTagName('script');for(var i=0;i<ss.length;i++){var s=ss[i],ml;if(!s.src){if(s.dataset.milLoader){ml=s.dataset.milLoader;}else{continue;}}else if(s.src.match(/mil_embed.js/)){ml=s.src.replace(/mil_embed.js.*$/, 'mil_loader.js');}else if(s.src.match(/mil_autoplay.js/)){ml=s.src.replace(/mil_autoplay.js.*$/, 'mil_loader.js');}else{continue;}var p=s.parentNode;p.removeChild(s);var mlp=ml.match(new RegExp('^(https?://[^/]+(/(?:[^/]+/)+))(js/.+)$'))||[];if(!mlp){console.error('script data-mil-loader invalid: ',ml);continue;}var pi={},mtcs=mlp[1].match(new RegExp('^(https?://)([^/]+)(/(?:[^/]+/)+)$'));if(mtcs){var fqdns=mtcs[2].split('.'),d=fqdns.length==3?fqdns[1]+'.'+fqdns[2]:'';if(!d){console.error('invalid fqdn: ',fqdns);continue;}if(fqdns[0]=='media'){pi.m_url=mlp[1];pi.p_url=mtcs[1]+mtcs[3].match(new RegExp('^/([^/]+)'))[1]+'.'+d+mtcs[3].replace(new RegExp('^/[^/]+'), '');}else{if(d!='mil.movie'){if(d.replace(/:[0-9]+$/, '')!='mil-test.net'){d='mil.movie';}}pi.p_url=mlp[1];pi.m_url=mtcs[1]+'media.'+d+'/'+fqdns[0]+mtcs[3];}}pi.pvid=mlp[2].replace(new RegExp('/(preview/)?(ad[0-9]/)?$'), '').match(new RegExp('/([^/]+)$'))[1];pi.loader=mlp[3];var vi=mv[pi.pvid];if(vi===0){continue;}if(vi){_set(vi,pi);}else{(function(pi){mv[pi.pvid]=0;var x=new XMLHttpRequest();x.open('GET',pi.p_url+'js/version?serial='+Date.now());x.onloadend=function(){var vi='0.0.0';if(x.status>=200){if(x.status<300){vi=(x.responseText||'0.0.1').trim();}}mv[pi.pvid]=vi;_set(vi,pi);};x.send();})(pi);}function _set(vi,pi){var vs=vi.split(','),ver=vs[0],c_url,s;try{c_url=JSON.parse(vs[2]).CDN_base_url;}catch(e){}s=document.createElement('script');s.charset='UTF-8';document.body.appendChild(s);if(ver){s.src=(c_url?c_url:pi.m_url)+pi.loader+'?ver='+ver;}else{s.src=pi.m_url+pi.loader+'?serial='+Date.now();}}}})();</script></div>
+		</div>
+
+		<div class="content-downside">
+			下部コンテンツ（用途に合わせて削除、変更してください）
+		</div>
+
+	</div>
+
+	<div id="footer">
+		固定フッター（用途に合わせて削除、変更してください）
+	</div>
+
+	<script>
+		(function() {
+			// 固定ヘッダー、コンテンツ、固定フッターのDOMを取得
+			var header = document.getElementById('header');
+			var content = document.getElementById('content');
+			var footer = document.getElementById('footer');
+
+			if (content) {
+				// ページロード完了時、ウィンドウリサイズ時にコンテンツのリサイズを行う
+				window.addEventListener('load', _resizeContent, false);
+				window.addEventListener('resize', _resizeContent, false);
+			}
+
+			/**
+			 * コンテンツのリサイズを行う
+			 *
+			 * @param array diff_list リサイズ後のコンテンツと描画部分の高さ差分の過去履歴
+			 *   ただし、初回呼び出し時はeventオブジェクトが格納されているので注意
+			 * @return なし
+			 */
+			function _resizeContent(diff_list) {
+				// 固定ヘッダー、固定フッターの高さを取得
+				var header_height = (header ? header.clientHeight : 0);
+				var footer_height = (footer ? footer.clientHeight : 0);
+	
+				// コンテンツのサイズを取得
+				var cw = content.clientWidth;
+				var ch = content.clientHeight;
+
+				// 描画領域のサイズを取得
+				var dw = document.documentElement.clientWidth;
+				var dh = document.documentElement.clientHeight - header_height - footer_height;
+
+				// コンテンツが小さすぎる場合は何もしない
+				if (cw < 10 || ch < 10 || dw < 10 || dh < 10) {
+					return;
+				}
+
+				// 描画領域いっぱいにコンテンツが表示されるように、コンテンツの幅をリサイズ
+				var w;
+				if (dw / dh <= cw / ch) {
+					w = dw;
+				} else {
+					w = Math.floor((dh / ch) * cw);
+				}
+				content.style.width = w + 'px';
+
+				// 本関数の初回呼び出し時はeventオブジェクトが格納されている為、
+				// 高さ差分の過去履歴を保持する為の配列として初期化する
+				diff_list = (diff_list instanceof Array ? diff_list : []);
+
+				// リサイズ後のコンテンツと描画領域の高さの差分を取得
+				var diff = Math.abs(Math.round(dh - content.clientHeight));
+
+				// 誤差よりも差分が大きいようであれば再帰的にリサイズを行う
+				// ※ただし、MIL以外のコンテンツ部分の内容によっては無限ループが発生する場合がある為、
+				// 　過去の履歴の高さ差分と一致する場合は再帰処理を行わない
+				if (diff > 1 && diff_list.indexOf(diff) < 0) {
+					diff_list.push(diff);
+					return _resizeContent(diff_list);
+				}
+			}
+		})();
+	</script>
+
+	<!-- ここに Twitter ユニバーサルウェブサイトタグ を入れてください -->
+</body>
+</html>
